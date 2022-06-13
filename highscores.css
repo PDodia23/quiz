@@ -1,0 +1,52 @@
+body {
+  color: aliceblue;
+}
+
+* {
+  color: white;
+}
+
+#highScoresList {
+  list-style: none;
+  margin-bottom: 4rem;
+  font-size: 10px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+.high-score {
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-family: "butler-ul";
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  width: 300px;
+}
+
+.container {
+  font-family: "butler-ul";
+  letter-spacing: 0.4rem;
+
+  position: relative;
+  left: 50%;
+}
+
+#finalScore {
+  font-size: 14px;
+  font-family: "butler-b";
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%;
+}
+
+.goHomeBtn {
+  position: absolute;
+  bottom: 10%;
+}

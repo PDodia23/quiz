@@ -1,0 +1,198 @@
+* {
+  color: white;
+  font-family: "butler-ul";
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+[type="file"]::-webkit-file-upload-button {
+  background: #333;
+  border: none;
+
+  font-family: "butler-ul";
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.462);
+  cursor: pointer;
+  font-size: 12px;
+  outline: none;
+
+  margin-right: 94px;
+  margin-left: -20px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+
+  margin-left: 70px;
+}
+
+#csvFile {
+  padding: 10px;
+
+  color: #999;
+  border: 1px double rgba(255, 255, 255, 0.302);
+  transition: all 0.5s ease-in-out;
+  font-family: "butler-ul";
+  letter-spacing: 0.2rem;
+  font-size: 10px;
+}
+#myForm {
+  color: white;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%);
+  width: 350px;
+}
+
+#btn-upload-csv {
+  border: 1px double rgba(255, 255, 255, 0.302);
+  padding: 14px 25px;
+  background-color: #333;
+  color: white;
+  font-size: 7px;
+  font-family: "butler-ul";
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin: -10px 0;
+
+  width: 80px;
+  text-align: center;
+  margin-left: -80px;
+}
+
+.choice-prefix {
+  padding: 2rem 2.5rem;
+  color: white;
+  font-family: "butler-ul";
+  font-size: 10px;
+  margin-right: -15px;
+  border-radius: 300px;
+}
+
+.container {
+  background-color: #333;
+  color: white;
+  color: white;
+  font-family: "butler-ul";
+  font-size: 18px;
+}
+
+.choice-text {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+
+  color: white;
+  font-family: "butler-ul";
+  font-size: 10px;
+  width: 350px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.correct {
+  background-color: rgb(98, 208, 184);
+}
+
+.incorrect {
+  background-color: rgb(203, 88, 88);
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+
+  border-radius: 300px;
+  transition: all 0.5s ease-in;
+  color: white;
+  border: 1px solid white;
+  font-size: 12px;
+  width: 320px;
+
+  padding: -20px;
+}
+
+#choices-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#question {
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  margin: 70px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  margin-top: 100px;
+
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#progressText {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.scoreID {
+  color: red !important;
+}
+
+#progressBar {
+  width: 200px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 40px;
+  margin-top: 2rem;
+  overflow: hidden;
+  position: absolute;
+  top: -1%;
+  right: 4%;
+  padding: 4px;
+  bottom: 0;
+}
+
+#progressBarFull {
+  height: 100%;
+  background-color: white;
+  width: 0%;
+  border-radius: 40px;
+}
+
+@media (hover: hover) {
+  [type="file"]::-webkit-file-upload-button:hover {
+    color: white;
+  }
+  [type="file"]::-webkit-file-upload-button:hover {
+    color: white;
+    font-family: "butler-ul";
+    width: 120px;
+  }
+  #btn-upload-csv:hover {
+    background-color: white;
+    color: black;
+  }
+  .choice-container:hover {
+    cursor: pointer;
+    background: rgb(219, 189, 56);
+  }
+}
+
+@media (pointer: coarse) {
+  .choice-container:hover {
+    cursor: pointer;
+    background: #333;
+  }
+}
